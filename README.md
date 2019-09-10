@@ -31,7 +31,7 @@
   </a>
 </div>
 
-<strong style="font-size: 1.2rem;">[English](/en) | 中文</strong>
+<strong style="font-size: 1.2rem;">[English](https://arya.lovejade.cn/#/en) | 中文</strong>
 
 荀子在《劝学》曰：**君子生非异也，善假于物也**。对于重复而精确性的事物，理想的目标是：有贴心工具加以协助，使得可以用更便捷的方式处理；Github 创建仓库：[ARYA JARVIS](https://github.com/nicejade/arya-jarvis)，即是为此而做的尝试 ── 她**旨在为开发人员节省更多时间、精力以及体力**。而此篇文章的存在，介绍 [ARYA JARVIS](https://github.com/nicejade/arya-jarvis) 的同时，也分享下关于对**善假于物**的理解。
 
