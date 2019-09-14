@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "start": "docsify serve",
+    "serve": "docsify start .",
+    "deploy": "now -p"
+  },
+  "docsify": {
+    "template": "./ssr.html",
+    "config": {
+      "basePath": "https://arya.lovejade.cn/",
+      "loadSidebar": true,
+      "loadNavbar": true
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "docsify-cli": "^4.3.0",
+    "now": "^16.2.0"
+  }
+}
