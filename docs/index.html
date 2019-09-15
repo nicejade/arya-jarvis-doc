@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8" />
+  <title>为高效而生：Arya Jarvis</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description"
+    content="荀子在《劝学》曰：君子生非异也，善假于物也。对于重复而精确性的事物，理想的目标是：有贴心工具加以协助，使得可以用更便捷的方式处理；Github 创建仓库：ARYA JARVIS，即是为此而做的尝试 ── 她旨在为开发人员节省更多时间、精力以及体力。" />
+  <meta name="keywords" content="Arya Jarvis, 一键获取, 美化代码，获取 ip, 一键查看端口占用, 构建本地 Web 服务器">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css" />
+</head>
+
+<body>
+  <nav>
+    <a href="https://nicelinks.site/?arya-jarvis.lovejade.cn">倾城</a>
+    <a href="https://www.jeffjade.com/?arya-jarvis.lovejade.cn">晚晴</a>
+    <a href="https://quickapp.lovejade.cn/?arya-jarvis.lovejade.cn">静轩</a>
+    <a href="#/zh-cn">中文</a>
+    <a href="/">EN</a>
+  </nav>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      basePath: '/',
+      ga: 'UA-86109050-9',
+      coverpage: ['/', '/zh-cn/'],
+      homepage: 'README.md',
+      name: "ARYA JARVIS DOC",
+      repo: "nicejade/arya-jarvis-doc",
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+      externalLinkTarget: '_self', // default: '_blank
+      // 完整配置参数
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: ["/", "/zh-cn"], // or 'auto'
+        // 支持本地化
+        placeholder: {
+          "/zh-cn": "搜索",
+          "/": "Type to search",
+        },
+        // 支持本地化
+        noData: {
+          "/zh-cn": "找不到结果",
+          "/": "No Results"
+        },
+        // 搜索标题的最大程级, 1 - 6
+        depth: 4
+      }
+    }
+    if (typeof navigator.serviceWorker !== "undefined") {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/ga.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+</body>
+
+</html>
