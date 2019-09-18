@@ -133,6 +133,16 @@ arya qrcode "晚晴幽草轩轩主"
 
 **温馨说明**：此项目集成了[二维码生成器](https://github.com/soldair/node-qrcod)，可以很便捷在控制台，就根据命令，为指定文本生成二维码，并提供保存于本地的功能；这相比于要在网上搜索在线服务，要方便许多，从节省更多时间角度考量，用 `arya qrcode` 是更好的抉择。
 
+### ✂️ 清除终端屏幕内容
+
+```bash
+arya clear
+# Or
+arya c
+```
+
+在 Mac OS，如果想实现此功能，可以在终端运行 `clear` 命令即可；但这离特别方便，还略有些距离；可以借助 `oh-my-zsh`，在 `.zshrc` 文件中配置命令别名：*alias cls='clear'*；如此一来，运行 `cls` 就足以清除终端屏幕内容；而这在 Windows 系统，就又须另当别论了；这么看来，使用 `arya c` 是蛮不错的选择。
+
 ### 🚝 列出 package.json 中的脚本命令
 
 ```bash
@@ -152,6 +162,7 @@ arya l
 - [**倾城之链**](https://nicelinks.site?utm_source=github.com)
 - [About Me](https://about.me/nicejade?utm_source=github.com)
 - [个人博客](https://jeffjade.com/nicelinks?utm_source=github.com)
+- [幽居空谷轩](https://www.lovejade.cn?utm_source=github.com)
 - [静轩之别苑](https://quickapp.lovejade.cn/?utm_source=github.com)
 - [静晴轩别苑](https://nice.lovejade.cn/?utm_source=github.com)
 - [吾意静晴轩](https://docz.lovejade.cn/?utm_source=github.com)

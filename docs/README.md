@@ -60,6 +60,16 @@ arya ip
 arya port 8080
 ```
 
+### ✂️ Clear the terminal screen content
+
+```bash
+arya clear
+# Or
+arya c
+```
+
+On Mac OS, if you want to implement this function, you can run the `clear` command on the terminal; but this is not particularly convenient; you can use `oh-my-zsh` to configure the command alias in the `.zshrc` file: *alias cls= 'clear'*; in this case, running `cls` is enough to clear the terminal screen content; and this is another case on Windows systems; in this case, using `arya c` is a pretty good choice.
+
 #### 🚝 List the script commands in package.json.
 
 ```bash
