@@ -1,4 +1,4 @@
-<p align="center"><a href="https://www.jeffjade.com/2019/08/25/156-arya-jarvis-born-for-efficiency/?utm_source=github.com" target="_blank"><img width="100"src="https://raw.githubusercontent.com/nicejade/arya-jarvis/master/assets/images/logo.png"></a></p>
+<p align="center"><a href="https://arya.lovejade.cn/?utm_source=github.com" target="_blank"><img width="100"src="https://raw.githubusercontent.com/nicejade/arya-jarvis/master/assets/images/logo.png"></a></p>
 
 <h1 align="center">ARYA JARVIS DOC</h1>
 
@@ -152,6 +152,7 @@ arya l
 - [**倾城之链**](https://nicelinks.site?utm_source=github.com)
 - [About Me](https://about.me/nicejade?utm_source=github.com)
 - [个人博客](https://jeffjade.com/nicelinks?utm_source=github.com)
+- [幽居空谷轩](https://www.lovejade.cn?utm_source=github.com)
 - [静轩之别苑](https://quickapp.lovejade.cn/?utm_source=github.com)
 - [静晴轩别苑](https://nice.lovejade.cn/?utm_source=github.com)
 - [吾意静晴轩](https://docz.lovejade.cn/?utm_source=github.com)
