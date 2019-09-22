@@ -59,7 +59,7 @@ yarn add global arya-jarvis
 
 如下两个代码美化相关功能，可以支持多种文件，譬如: `.js`, `.vue`, `.ux`, `.less`, `.scss`, `.css`, `.json`, `.md`, `.html`, `.qxml`, `.wxml`。
 
-### 💄 美化指定路径下的代码
+### 💄 一键美化指定路径下的代码
 
 ```bash
 arya prettier index.js
@@ -94,6 +94,28 @@ arya s
 **温馨说明**：`arya s`，用于快速构建本地 Web 服务器，这是非常有用的功能；比如说，你想快速下载您电脑上资源至手机，那么即可在该资源目录下，运行 `arya s` 命令，就会以当前目录作为静态网站托管，建立一个 Server，并依据本地 IP（/电脑名）生成地址，只要手机端跟电脑在同一个网段下，即可访问下载；这里更贴心的是，会将对应地址生成**二维码**，并在控制台打印，用手机扫码即可访问。
 
 实际上，这个功能有借助 [lws](https://github.com/lwsjs/lws) 来实现；它的功能当然是不止于上面表达的那一点，这对于开发人员来讲，尤为实用，这将会在后面不断迭代中，继续完善；也有打算出一个文档，以给出充分说明，敬请期待。
+
+### 🌊 一键预览指定 Markdown 文件
+
+```bash
+arya markdown README.md
+arya markdown ./nice-project/README.md
+# 👏 Or Use Alias
+arya m README.md
+```
+
+**温馨说明**：[Markdown](https://github.com/nicejade/nice-front-end-tutorial/blob/master/tutorial/markdown-tutorial.md) 是一种轻量级的「标记语言」，旨在简洁、高效；可以通过简单、易读易写的文本格式，生成结构化的 `HTML` 文档；预览 Markdown 呈现效果，虽然在各类编辑器，都有其解释器插件，但也得额外安装、激活方可；因此有借助 [marked](https://github.com/markedjs/marked) 实现一键快速预览 `Markdown`，并呈现出跟 `Github` 一样的现实效果。
+
+#### 预览 Markdown 选项
+
+##### Watcher (`-w` , `--watch`)
+
+默认情况下，不会监听您指定的 `Markdown` 文件，您可以通过增加 `-w` 选项，来开启监听功能，以实时刷新您的预览页面，参见如下示例：
+
+```bash
+arya markdown README.md -w
+arya markdown README.md --watch
+```
 
 ### ⚡️ 找到您本地 IP 地址并打印出来
 
@@ -133,7 +155,7 @@ arya qrcode "晚晴幽草轩轩主"
 
 **温馨说明**：此项目集成了[二维码生成器](https://github.com/soldair/node-qrcod)，可以很便捷在控制台，就根据命令，为指定文本生成二维码，并提供保存于本地的功能；这相比于要在网上搜索在线服务，要方便许多，从节省更多时间角度考量，用 `arya qrcode` 是更好的抉择。
 
-### ✂️ 清除终端屏幕内容
+### ✂️ 尽可能清除终端屏幕内容
 
 ```bash
 arya clear

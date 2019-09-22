@@ -48,6 +48,24 @@ arya server
 arya s
 ```
 
+### 🌊 One-click preview of the specified Markdown file
+
+```bash
+arya markdown README.md
+arya markdown ./nice-project/README.md
+# 👏 Or Use Alias
+arya m README.md
+```
+
+##### Watcher (`-w` , `--watch`)
+
+By default, the `Markdown` file you specify will not be listened. You can enable the monitor function by adding the `-w` option to refresh your preview page in real time. See the example below：
+
+```bash
+arya markdown README.md -w
+arya markdown README.md --watch
+```
+
 #### ⚡️ Find your local IP address and print it.
 
 ```bash
@@ -60,7 +78,7 @@ arya ip
 arya port 8080
 ```
 
-### ✂️ Clear the terminal screen content
+### ✂️ Clear the terminal screen if possible
 
 ```bash
 arya clear
