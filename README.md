@@ -52,7 +52,7 @@
 ```bash
 npm i arya-jarvis -g
 # Or
-yarn add global arya-jarvis
+yarn global add arya-jarvis
 ```
 
 ## 如何使用
