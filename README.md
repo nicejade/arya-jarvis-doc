@@ -167,6 +167,21 @@ arya c
 
 在 Mac OS，如果想实现此功能，可以在终端运行 `clear` 命令即可；但这离特别方便，还略有些距离；可以借助 `oh-my-zsh`，在 `.zshrc` 文件中配置命令别名：*alias cls='clear'*；如此一来，运行 `cls` 就足以清除终端屏幕内容；而这在 Windows 系统，就又须另当别论了；这么看来，使用 `arya c` 是蛮不错的选择。
 
+### 🌫 灰阶: 去除图像的颜色
+
+```bash
+arya img:greyscale <path>
+
+# 👏 Or Use Alias
+arya igs <path>
+arya igs ./assets/images
+arya igs ./assets/images/logo.png
+```
+
+指定图片或其所在的文件夹路径（相对 or 绝对），会将所有支持的图像灰度处理；所有处理过的图片都放在一个新文件夹中：`arya-greyscale-imgs`；支持的图像类型: `.bmp`, `.gif`, `.jpeg`, `.jpg`, `.png`, `.tiff`。
+
+**温馨说明**：注入此功能，也是出于自身需要：在编写[小程序版本「倾城之链」](https://github.com/nicejade/nicelinks-miniprogram)时，在使用官方 `Tabbar` 组件，需要提供 icon 和选中时的 icon；为区分两者不同状态，将默认 icon 置灰，是通用选择。如采取 `PS` 或者 `CSS` 一张张操作，实在有些麻烦，而在网上也未找见有类似批量**灰阶**图片的工具，索性就自己写一个，以方便使用。感谢 [jimp](https://github.com/oliver-moran/jimp) 开源库提供的支持。
+
 ### 🚝 列出 package.json 中的脚本命令
 
 ```bash
