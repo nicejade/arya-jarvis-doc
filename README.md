@@ -125,7 +125,7 @@ arya markdown README.md --watch
 arya ip
 ```
 
-**温馨说明**：对于获取本地 IP 这一诉求，无论是使用 Mac、Linux 还是 Windows 用户，如果没有特殊配置，也是颇为麻烦的；即便在控制台使用 `ipconfig` or `ifconfig`，得到的结果也是需要一番筛选；而使用 `arya ip` 则可以轻松获取。
+**温馨说明**：对于获取本地 IP（以及公网 IP）这一诉求，无论是使用 Mac、Linux 还是 Windows 用户，如果没有特殊配置，也是颇为麻烦的；即便在控制台使用 `ipconfig` or `ifconfig`，得到的结果也是需要一番筛选；而使用 `arya ip` 则可以轻松获取。
 
 ### 👀 查看占用指定端口的程序
 
@@ -155,7 +155,16 @@ arya qrcode "https://www.jeffjade.com/"
 arya qrcode "晚晴幽草轩轩主"
 ```
 
-**温馨说明**：此项目集成了[二维码生成器](https://github.com/soldair/node-qrcod)，可以很便捷在控制台，就根据命令，为指定文本生成二维码，并提供保存于本地的功能；这相比于要在网上搜索在线服务，要方便许多，从节省更多时间角度考量，用 `arya qrcode` 是更好的抉择。
+**温馨说明**：此项目集成了[二维码生成器](https://github.com/soldair/node-qrcod)，可以很便捷在控制台，就根据命令，为指定文本生成二维码，并提供保存于本地的功能（需要额外参数 `-s`）；这相比于要在网上搜索在线服务，要方便许多，从节省更多时间角度考量，用 `arya qrcode` 是更好的抉择。
+
+#### 额外参数选项
+
+#### Save (`-s` , `--save`)
+
+```bash
+arya qrcode "https://nicelinks.site/" -s
+arya qrcode "https://www.lovejade.cn/" --save
+```
 
 ### ✂️ 尽可能清除终端屏幕内容
 

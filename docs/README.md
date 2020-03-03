@@ -73,6 +73,8 @@ arya markdown README.md --watch
 arya ip
 ```
 
+Regarding the request for obtaining a local IP (and public network IP), whether using Mac, Linux, or Windows users, it is quite troublesome if there is no special configuration; even if you use ipconfig or ifconfig in the console, the results obtained need Fan screening; easy access with `arya ip`.
+
 ### 👀 View programs that occupy the specified port.
 
 ```bash
@@ -84,6 +86,15 @@ arya port 8080
 ```bash
 arya qrcode "https://www.jeffjade.com/"
 arya qrcode "晚晴幽草轩轩主"
+```
+
+This project integrate [QR code generator](https://github.com/soldair/node-qrcod), which can be conveniently located on the console, and generates a QR code for the specified text according to the command, and provides the function of saving locally (requires additional parameters `-s`); Searching online for online services is much more convenient. From the perspective of saving more time, using `arya qrcode` is a better choice.
+
+#### Save (`-s` , `--save`)
+
+```bash
+arya qrcode "https://nicelinks.site/" -s
+arya qrcode "https://www.lovejade.cn/" --save
 ```
 
 ### ✂️ Clear the terminal screen if possible
@@ -103,8 +114,12 @@ arya img:greyscale <path>
 
 # 👏 Or Use Alias
 arya igs <path>
+# local folder
 arya igs ./assets/images
+# local image file
 arya igs ./assets/images/logo.png
+# online image address
+arya igs https://www.lovejade.cn/logo.png
 ```
 
 All processed pictures are placed in a new folder: `arya-greyscale-imgs`. Supported Image Types: `.bmp`, `.gif`, `.jpeg`, `.jpg`, `.png`, `.tiff`.
@@ -139,4 +154,4 @@ In addition, [arya jarvis](https://github.com/nicejade/arya-jarvis) is still imp
 
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2019-present, [nicejade](https://aboutme.lovejade.cn/?utm_source=arya-jarvis).
+Copyright (c) 2019-present, [nicejade](https://aboutme.lovejade.cn/?utm_source=arya.lovejade.cn).
