@@ -1,4 +1,4 @@
-<p align="center"><a href="https://www.jeffjade.com/2019/08/25/156-arya-jarvis-born-for-efficiency/?utm_source=arya-jarvis-doc" target="_blank"><img width="100"src="https://image.nicelinks.site/arya-jarvis-logo.png"></a></p>
+<p align="center"><a href="https://arya.lovejade.cn/?utm_source=arya-jarvis-doc" target="_blank"><img width="100"src="https://image.nicelinks.site/arya-jarvis-logo.png"></a></p>
 
 <h1 align="center">ARYA JARVIS DOC</h1>
 
@@ -31,7 +31,7 @@
   </a>
 </div>
 
-<strong style="font-size: 1.2rem;">[English](/) | 中文</strong>
+<strong style="font-size: 1.2rem;">[English](https://arya.lovejade.cn/#/) | 中文</strong>
 
 荀子在《劝学》曰：**君子生非异也，善假于物也**。对于重复而精确性的事物，理想的目标是：有贴心工具加以协助，使得可以用更便捷的方式处理；Github 创建仓库：[ARYA JARVIS](https://github.com/nicejade/arya-jarvis)，即是为此而做的尝试 ── 她**旨在为开发人员节省更多时间、精力以及体力**。而此篇文章的存在，介绍 [ARYA JARVIS](https://github.com/nicejade/arya-jarvis) 的同时，也分享下关于对**善假于物**的理解。
 
@@ -112,7 +112,7 @@ arya m README.md
 
 ##### Watcher (`-w` , `--watch`)
 
-默认情况下，不会监听您指定的 `Markdown` 文件，您可以通过增加 `-w` 选项，来开启监听功能，以实时刷新您的预览页面，参见如下示例：
+默认情况下，不会监听您指定的 Markdown 文件，您可以通过增加 `-w` 选项来开启监听功能，以实时刷新您的预览页面，参见如下示例：
 
 ```bash
 arya markdown README.md -w
@@ -159,11 +159,19 @@ arya qrcode "晚晴幽草轩轩主"
 
 #### 额外参数选项
 
-#### Save (`-s` , `--save`)
+##### Save (`-s` , `--save`)
 
 ```bash
 arya qrcode "https://nicelinks.site/" -s
 arya qrcode "https://www.lovejade.cn/" --save
+```
+
+##### Width (`-w`, `--width`)
+
+设定所保存二维码的宽度（跟 `-s` 一起用有效）；
+
+```bash
+arya qrcode "https://nicelinks.site/" -s -w 200
 ```
 
 ### ✂️ 尽可能清除终端屏幕内容
@@ -175,6 +183,15 @@ arya c
 ```
 
 在 Mac OS，如果想实现此功能，可以在终端运行 `clear` 命令即可；但这离特别方便，还略有些距离；可以借助 `oh-my-zsh`，在 `.zshrc` 文件中配置命令别名：*alias cls='clear'*；如此一来，运行 `cls` 就足以清除终端屏幕内容；而这在 Windows 系统，就又须另当别论了；这么看来，使用 `arya c` 是蛮不错的选择。
+
+### 🌋 一键批量为文件重命名
+
+```bash
+arya rename Your-Specified-Path -n "nice-links"
+arya rename Your-Specified-Path -n "nice-links" --initial 50
+arya rename Your-Specified-Path -n "nice-links" --initial 50 -s '-'
+arya rename Your-Specified-Path -n "nice-links" --initial 50 --digits 4
+```
 
 ### 🌫 灰阶: 去除图像的颜色
 
@@ -190,6 +207,25 @@ arya igs ./assets/images/logo.png
 指定图片或其所在的文件夹路径（相对 or 绝对），会将所有支持的图像灰度处理；所有处理过的图片都放在一个新文件夹中：`arya-greyscale-imgs`；支持的图像类型: `.bmp`, `.gif`, `.jpeg`, `.jpg`, `.png`, `.tiff`。
 
 **温馨说明**：注入此功能，也是出于自身需要：在编写[小程序版本「倾城之链」](https://github.com/nicejade/nicelinks-miniprogram)时，在使用官方 `Tabbar` 组件，需要提供 icon 和选中时的 icon；为区分两者不同状态，将默认 icon 置灰，是通用选择。如采取 `PS` 或者 `CSS` 一张张操作，实在有些麻烦，而在网上也未找见有类似批量**灰阶**图片的工具，索性就自己写一个，以方便使用。感谢 [jimp](https://github.com/oliver-moran/jimp) 开源库提供的支持。
+
+### 🌌 为批量图片添加外阴影效果
+
+Mac OS 系统上，在获得焦点程序的周边，有一层浅灰色外阴影，使得应用程序看起来略带立体感；其阴影渐进变淡，与毕竟色融合在一起，也使得看起来流畅自然，不突兀。为图片一键添加立体感外阴影，这是一个有价值的工具；请参见如下命令：
+
+```bash
+# arya img:shadow 你的图片所在目录地址
+arya img:shadow YOUR-IMGS-DIR-PATH
+# Or
+arya ishadow YOUR-IMGS-DIR-PATH
+```
+
+**备注** 此命令有依赖于 [imagemagick](https://imagemagick.org/) 这款软件，因此，在使用之前，您需要手动安装；如果您使用的是 Mac，可以通过如下命令，一键安装（其他平台，可以下载对应软件，参见 [imagemagick download](https://imagemagick.org/script/download.php)）：
+
+```bash
+brew install imagemagick
+```
+
+关于这个命令的注入，其背后的故事，可以参见文章：[为文章图片添加外阴影效果](https://quickapp.lovejade.cn/how-to-add-shadow-effects-to-image/)。
 
 ### 🚝 列出 package.json 中的脚本命令
 
@@ -207,20 +243,24 @@ arya l
 
 ## 相关链接
 
-- [**倾城之链**](https://nicelinks.site?utm_source=arya-jarvis-doc)
-- [About Me](https://about.me/nicejade?utm_source=arya-jarvis-doc)
-- [个人博客](https://jeffjade.com/nicelinks?utm_source=arya-jarvis-doc)
-- [幽居空谷轩](https://www.lovejade.cn?utm_source=arya-jarvis-doc)
-- [静轩之别苑](https://quickapp.lovejade.cn/?utm_source=arya-jarvis-doc)
-- [静晴轩别苑](https://nice.lovejade.cn/?utm_source=arya-jarvis-doc)
-- [吾意静晴轩](https://docz.lovejade.cn/?utm_source=arya-jarvis-doc)
-- [天意人间舫](https://blog.lovejade.cn/?utm_source=arya-jarvis-doc)
-- [新浪微博](https://weibo.com/jeffjade?utm_source=arya-jarvis-doc)
-- [知乎主页](https://www.zhihu.com/people/yang-qiong-pu/)
-- [简书主页](https://www.jianshu.com/u/9aae3d8f4c3d)
-- [SegmentFault](https://segmentfault.com/u/jeffjade)
-- [Twitter](https://twitter.com/nicejadeyang)
-- [Facebook](https://www.facebook.com/nice.jade.yang)
+* [**倾城之链**](https://nicelinks.site?utm_source=github-nicelinks)
+* [About Me](https://about.me/nicejade?utm_source=github-nicelinks)
+* [个人博客](https://jeffjade.com/nicelinks?utm_source=github-nicelinks)
+* [静轩之别苑](https://quickapp.lovejade.cn/?utm_source=github-nicelinks)
+* [静晴轩别苑](https://nice.lovejade.cn/?utm_source=github-nicelinks)
+* [吾意静晴轩](https://docz.lovejade.cn/?utm_source=github-nicelinks)
+* [天意人间舫](https://blog.lovejade.cn/?utm_source=github-nicelinks)
+* [新浪微博](https://weibo.com/jeffjade?utm_source=github-nicelinks)
+* [知乎主页](https://www.zhihu.com/people/yang-qiong-pu/)
+* [简书主页](https://www.jianshu.com/u/9aae3d8f4c3d)
+* [SegmentFault](https://segmentfault.com/u/jeffjade)
+* [Twitter](https://twitter.com/nicejadeyang)
+* [Facebook](https://www.facebook.com/nice.jade.yang)
+
+| 微信公众号 | 前端微信群 | 推荐 Web 应用 |
+| --- | --- | --- |
+| 😉 静晴轩 | ✨ 大前端联盟 | 🎉 倾城之链 |
+| ![静晴轩](https://image.nicelinks.site/qrcode_jqx.jpg) | ![倾城之链](https://image.nicelinks.site/wqycx-weixin.png?ver=1) |<img src="https://image.nicelinks.site/nice-links.png" width="300px" alt="倾城之链"></img>|
 
 ## License
 

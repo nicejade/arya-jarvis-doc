@@ -124,6 +124,26 @@ arya igs https://www.lovejade.cn/logo.png
 
 All processed pictures are placed in a new folder: `arya-greyscale-imgs`. Supported Image Types: `.bmp`, `.gif`, `.jpeg`, `.jpg`, `.png`, `.tiff`.
 
+
+### 🌌 Adding a shadow effect to a batch image
+
+On Mac OS, there's a light gray outer shadow around the focal program, which gives the application a slightly three-dimensional look; the shadows fade to blend in with the final color, which also makes it look smooth and natural without being overpowering. Adding a stereoscopic outer shadow to an image in one click is a valuable tool; see the following command：
+
+```bash
+# arya img:shadow Your-Images-Dir-Path
+arya img:shadow YOUR-IMGS-DIR-PATH
+# Or
+arya ishadow YOUR-IMGS-DIR-PATH
+```
+
+**Note**: This command is dependent on [imagemagick](https://imagemagick.org/), so you need to install it manually before using it; if you are using a Mac, you can install it in one click (for other platforms, you can download the corresponding software, see [imagemagick download](https://imagemagick.org/script/download.php)) with the following command:
+
+```bash
+brew install imagemagick
+```
+
+For the story behind the addition of this command, see the article in the article：[为文章图片添加外阴影效果](https://quickapp.lovejade.cn/how-to-add-shadow-effects-to-image/)。
+
 ### 🚝 List the script commands in package.json.
 
 ```bash

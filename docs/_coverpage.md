@@ -1,4 +1,4 @@
-<p align="center"><a href="https://www.jeffjade.com/2019/08/25/156-arya-jarvis-born-for-efficiency/?utm_source=github.com" target="_blank"><img width="100"src="https://raw.githubusercontent.com/nicejade/arya-jarvis/master/assets/images/logo.png"></a></p>
+<p align="center"><a href="https://www.jeffjade.com/2019/08/25/156-arya-jarvis-born-for-efficiency/?utm_source=github.com" target="_blank"><img width="100"src="https://image.nicelinks.site/arya-jarvis-logo.png"></a></p>
 
 <h1 align="center">ARYA JARVIS DOC</h1>
 
