@@ -35,7 +35,9 @@
 
 荀子在《劝学》曰：**君子生非异也，善假于物也**。对于重复而精确性的事物，理想的目标是：有贴心工具加以协助，使得可以用更便捷的方式处理；Github 创建仓库：[ARYA JARVIS](https://github.com/nicejade/arya-jarvis)，即是为此而做的尝试 ── 她**旨在为开发人员节省更多时间、精力以及体力**。而此篇文章的存在，介绍 [ARYA JARVIS](https://github.com/nicejade/arya-jarvis) 的同时，也分享下关于对**善假于物**的理解。
 
-![为高效而生：Arya Jarvis](https://image.nicelinks.site/arya-jarvis.jpg)
+> **『有则推荐』**: 自 2017 年初，就有开始利用闲余时光，打磨个人最新作品——[**「倾城之链」**](https://nicelinks.site/) ，有意将其打造成优良开放型平台，旨在云集全球优秀网站，让您更为便捷地探索互联网中那更广阔的世界；在这里，您可以轻松**发现**、**学习**、**分享**更多`有用`或`有趣`的事物。目前仍在不断迭代、优化中，如果您对此感兴趣，不妨先尝试一下： [「倾城之链」](https://nicelinks.site/about)；亦十分欢迎提出宝贵意见。 Upade@2018-01-19于深圳.南山。
+
+![倾城之链 - 小程序](https://image.nicelinks.site/nicelinks-miniprogram-code.jpeg?imageView2/1/w/250/h/250/interlace/1/ignore-error/1)
 
 ## 故事起源
 
