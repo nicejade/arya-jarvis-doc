@@ -1,8 +1,7 @@
 {
   "scripts": {
     "start": "docsify serve docs",
-    "serve": "docsify start docs",
-    "deploy": "now -p"
+    "serve": "docsify start docs"
   },
   "docsify": {
     "template": "./ssr.html",
@@ -14,7 +13,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "docsify-cli": "^4.3.0",
-    "now": "^16.2.0"
+    "docsify-cli": "^4.3.0"
   }
 }
