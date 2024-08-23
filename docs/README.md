@@ -155,17 +155,12 @@ In addition, [arya jarvis](https://github.com/nicejade/arya-jarvis) is still imp
 
 ## Recommended links
 
-- [**NICE LINKS**](https://nicelinks.site/?utm_source=github.com)
-- [About Me](https://about.me/nicejade/?utm_source=github.com)
-- [**Hexo Blog**](https://jeffjade.com/?utm_source=github.com)
-- [VuePress Blog](https://www.lovejade.cn/?utm_source=github.com)
-- [VuePress Blog](https://nice.lovejade.cn/?utm_source=github.com)
-- [Ghost Blog](https://quickapp.lovejade.cn/?utm_source=github.com)
-- [Jekyll blog](https://blog.lovejade.cn/?utm_source=github.com)
+- [逍遥自在轩](https://niceshare.site/?ref=github.com)
+- [晚晴幽草轩](https://www.jeffjade.com/nicelinks?ref=github.com)
+- [静轩之别苑](https://quickapp.lovejade.cn/?ref=github.com)
+- [悠然宜想亭](https://forum.lovejade.cn//?ref=github.com)
+- [静晴轩别苑](https://nice.lovejade.cn/?ref=github.com)
 - [SegmentFault](https://segmentfault.com/u/jeffjade)
-- [Wei bo](http://weibo.com/jeffjade/)
-- [Zhi Hu](https://www.zhihu.com/people/yang-qiong-pu/)
-- [Jian Shu](http://www.jianshu.com/u/9aae3d8f4c3d)
 - [Twitter](https://twitter.com/nicejadeyang)
 - [Facebook](https://www.facebook.com/nice.jade.yang)
 
