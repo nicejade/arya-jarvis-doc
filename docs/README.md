@@ -1,4 +1,3 @@
-
 ## Goal and Philosophy
 
 The ideal goal is to help us deal with things that can be more precise in the simplest way. `Arya Jarvis` is an attempt to do this, it designed to save developers more time and energy.
