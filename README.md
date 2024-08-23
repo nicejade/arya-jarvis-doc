@@ -1,10 +1,14 @@
-<p align="center"><a href="https://arya.lovejade.cn/?utm_source=arya-jarvis-doc" target="_blank"><img width="100"src="https://image.nicelinks.site/arya-jarvis-logo.png"></a></p>
+<p align="center">
+  <a href="https://arya.lovejade.cn/?utm_source=arya-jarvis-doc" target="_blank">
+    <img width="100"src="https://arya.lovejade.cn/icon/android-chrome-192x192.png">
+  </a>
+</p>
 
 <h1 align="center">ARYA JARVIS DOC</h1>
 
 <div align="center">
   <strong>
-    旨在为开发人员节省更多时间和精力
+    Arya Jarvis 旨在为开发人员节省更多时间和精力。
   </strong>
 </div>
 
@@ -17,27 +21,20 @@
   <a href="https://github.com/nicejade/arya-jarvis">
     <img src="https://img.shields.io/github/license/nicejade/arya-jarvis" alt="LICENSE">
   </a>
-  <a href="https://nicelinks.site/post/5c16083e819ae45de1453caa">
+  <a href="https://www.niceshare.site/#编码开发">
     <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat" alt="Prettier">
   </a>
   <a href="https://www.jeffjade.com/">
     <img src="https://img.shields.io/badge/chat-on%20blog-brightgreen.svg" alt="Arya Jarvis">
-  </a>
-  <a href="https://weibo.com/jeffjade">
-    <img src="https://img.shields.io/badge/WeiBo-jeffjade-red.svg?style=flat" alt="Arya Jarvis">
   </a>
   <a href="https://aboutme.lovejade.cn/?utm_source=arya-jarvis-doc">
     <img src="https://img.shields.io/badge/Author-nicejade-%23a696c8.svg" alt="Author nicejade">
   </a>
 </div>
 
-<strong style="font-size: 1.2rem;">[English](https://arya.lovejade.cn/#/) | 中文</strong>
+<strong style="font-size: 1.2rem;">[English](https://arya.lovejade.cn/#/)  |  中文</strong>
 
 荀子在《劝学》曰：**君子生非异也，善假于物也**。对于重复而精确性的事物，理想的目标是：有贴心工具加以协助，使得可以用更便捷的方式处理；Github 创建仓库：[ARYA JARVIS](https://github.com/nicejade/arya-jarvis)，即是为此而做的尝试 ── 她**旨在为开发人员节省更多时间、精力以及体力**。而此篇文章的存在，介绍 [ARYA JARVIS](https://github.com/nicejade/arya-jarvis) 的同时，也分享下关于对**善假于物**的理解。
-
-> **『有则推荐』**: 自 2017 年初，就有开始利用闲余时光，打磨个人最新作品——[**「倾城之链」**](https://nicelinks.site/) ，有意将其打造成优良开放型平台，旨在云集全球优秀网站，让您更为便捷地探索互联网中那更广阔的世界；在这里，您可以轻松**发现**、**学习**、**分享**更多`有用`或`有趣`的事物。目前仍在不断迭代、优化中，如果您对此感兴趣，不妨先尝试一下： [「倾城之链」](https://nicelinks.site/about)；亦十分欢迎提出宝贵意见。 Upade@2018-01-19于深圳.南山。
-
-![倾城之链 - 小程序](https://image.nicelinks.site/nicelinks-miniprogram-code.jpeg?imageView2/1/w/250/h/250/interlace/1/ignore-error/1)
 
 ## 故事起源
 
@@ -245,27 +242,16 @@ arya l
 
 ## 相关链接
 
-- [**倾城之链**](https://nicelinks.site?utm_source=github)
-- [About Me](https://aboutme.lovejade.cn/?utm_source=github)
-- [个人博客](https://www.jeffjade.com/nicelinks?utm_source=github)
-- [静轩之别苑](https://quickapp.lovejade.cn/nicelinks?utm_source=github)
-- [静晴轩别苑](https://nice.lovejade.cn/?utm_source=github)
-- [吾意静晴轩](https://docz.lovejade.cn/?utm_source=github)
-- [天意人间舫](https://blog.lovejade.cn/?utm_source=github)
-- [新浪微博](https://weibo.com/jeffjade?utm_source=github)
-- [知乎主页](https://www.zhihu.com/people/yang-qiong-pu/)
-- [简书主页](https://www.jianshu.com/u/9aae3d8f4c3d)
+- [逍遥自在轩](https://niceshare.site/?ref=github.com)
+- [晚晴幽草轩](https://www.jeffjade.com/nicelinks?ref=github.com)
+- [静轩之别苑](https://quickapp.lovejade.cn/?ref=github.com)
+- [悠然宜想亭](https://forum.lovejade.cn//?ref=github.com)
+- [静晴轩别苑](https://nice.lovejade.cn/?ref=github.com)
 - [SegmentFault](https://segmentfault.com/u/jeffjade)
 - [Twitter](https://twitter.com/nicejadeyang)
-- [Facebook](https://www.facebook.com/yang.gang.jade)
-
-| 微信公众号 | 前端微信群 | 推荐 Web 应用 | 推荐小程序 |
-| :---: | :---: | :---: | :---: |
-| 😉 静晴轩 | ✨ 大前端联盟 | 🎉 倾城之链 | 🌊 倾城之链 |
-| ![静晴轩](https://image.nicelinks.site/qrcode_jqx.jpg) | ![倾城之链](https://image.nicelinks.site/wqycx-weixin.png?ver=1) | <img src="https://image.nicelinks.site/nice-links.png" width="300px" alt="倾城之链"></img> | <img src="https://camo.githubusercontent.com/a4d1e07fce0639d0a43ebdb4074c5c1e67978934/68747470733a2f2f696d6167652e6e6963656c696e6b732e736974652f6e6963656c696e6b732d6d696e6970726f6772616d2d636f64652e6a706567" width="300px" alt="倾城之链"></img> |
 
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2019-present, [nicejade](https://aboutme.lovejade.cn/?utm_source=arya-jarvis).
+Copyright (c) 2019-present, [逍遥自在轩](https://www.niceshare.site/?ref=github.com).
