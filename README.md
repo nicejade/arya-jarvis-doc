@@ -49,9 +49,11 @@
 ## 下载安装
 
 ```bash
-npm i arya-jarvis -g
-# Or
+pnpm add -g arya-jarvis
+# OR
 yarn global add arya-jarvis
+# OR
+npm i arya-jarvis -g
 ```
 
 ## 如何使用
@@ -242,13 +244,14 @@ arya l
 
 ## 相关链接
 
+- [清风明月轩](https://www.thebettersites.com/?ref=github.com)
 - [逍遥自在轩](https://niceshare.site/?ref=github.com)
 - [晚晴幽草轩](https://www.jeffjade.com/nicelinks?ref=github.com)
 - [静轩之别苑](https://quickapp.lovejade.cn/?ref=github.com)
 - [悠然宜想亭](https://forum.lovejade.cn//?ref=github.com)
 - [静晴轩别苑](https://nice.lovejade.cn/?ref=github.com)
 - [SegmentFault](https://segmentfault.com/u/jeffjade)
-- [Twitter](https://twitter.com/nicejadeyang)
+- [X | MarshalXuan](https://x.com/MarshalXuan)
 
 ## License
 
