@@ -56,7 +56,67 @@ yarn global add arya-jarvis
 npm i arya-jarvis -g
 ```
 
+## 功能列表
+
+| 命令       | 命令别名 | 参数   | 功能描述  |
+| -------- | ---- | ---- | --- |
+| copy:pwd | pwd  | -    | [🚀 将当前路径复制到剪贴板](https://arya.lovejade.cn/#/zh-cn?id=🚀-将当前路径复制到剪贴板)                                                                                                                        |
+| password | pw   | 密码长度 | [🔐 生成随机安全密码](https://arya.lovejade.cn/#/zh-cn?id=%f0%9f%94%90-生成随机安全密码)                                                                                                          |
+| server   | s    | -    | [🌍 用于快速构建本地 Web 服务器](https://arya.lovejade.cn/#/zh-cn?id=%f0%9f%8c%8d-%e7%94%a8%e4%ba%8e%e5%bf%ab%e9%80%9f%e6%9e%84%e5%bb%ba%e6%9c%ac%e5%9c%b0-web-%e6%9c%8d%e5%8a%a1%e5%99%a8)               |
+| markdown | m    | 文件路径 | [🌊 一键预览指定 Markdown 文件](https://arya.lovejade.cn/#/zh-cn?id=%f0%9f%8c%8a-%e4%b8%80%e9%94%ae%e9%a2%84%e8%a7%88%e6%8c%87%e5%ae%9a-markdown-%e6%96%87%e4%bb%b6)                                   |
+| ip       | -    | -    | [⚡️ 找到您本地 IP 地址并打印出来](https://arya.lovejade.cn/#/zh-cn?id=%e2%9a%a1%ef%b8%8f-%e6%89%be%e5%88%b0%e6%82%a8%e6%9c%ac%e5%9c%b0-ip-%e5%9c%b0%e5%9d%80%e5%b9%b6%e6%89%93%e5%8d%b0%e5%87%ba%e6%9d%a5) |
+| port     | -    | 端口号  | [👀 查看占用指定端口的程序](https://arya.lovejade.cn/#/zh-cn?id=%f0%9f%91%80-%e6%9f%a5%e7%9c%8b%e5%8d%a0%e7%94%a8%e6%8c%87%e5%ae%9a%e7%ab%af%e5%8f%a3%e7%9a%84%e7%a8%8b%e5%ba%8f)                         |
+| clear    | c    | -    | [✂️ 尽可能清除终端屏幕内容](https://arya.lovejade.cn/#/zh-cn?id=%e2%9c%82%ef%b8%8f-%e5%b0%bd%e5%8f%af%e8%83%bd%e6%b8%85%e9%99%a4%e7%bb%88%e7%ab%af%e5%b1%8f%e5%b9%95%e5%86%85%e5%ae%b9)                   |
+| prettier | p    | 指定路径 | [💄 一键美化指定路径下的代码](https://arya.lovejade.cn/#/zh-cn?id=%f0%9f%92%84-%e4%b8%80%e9%94%ae%e7%be%8e%e5%8c%96%e6%8c%87%e5%ae%9a%e8%b7%af%e5%be%84%e4%b8%8b%e7%9a%84%e4%bb%a3%e7%a0%81)               |
+| watcher  | w    | 指定路径 | [🔬 监听并美化指定路径下的代码](https://arya.lovejade.cn/#/zh-cn?id=%f0%9f%94%ac-%e7%9b%91%e5%90%ac%e5%b9%b6%e7%be%8e%e5%8c%96%e6%8c%87%e5%ae%9a%e8%b7%af%e5%be%84%e4%b8%8b%e7%9a%84%e4%bb%a3%e7%a0%81)     |
+| rename  | -    | 指定路径 | [🌋 一键批量为文件重命名](https://arya.lovejade.cn/#/zh-cn?id=🌋-一键批量为文件重命名)     |
+| img:greyscale  | igs    | 图片地址| [🌫 灰阶: 去除图像的颜色](https://arya.lovejade.cn/#/zh-cn?id=🌫-灰阶-去除图像的颜色)     |
+| img:shadow  | ishadow    | 图片地址| [🌌 为批量图片添加外阴影效果](https://arya.lovejade.cn/#/zh-cn?id=🌌-为批量图片添加外阴影效果)     |
+| ls  | l    | - | [🚝 列出 package.json 中的脚本命令](https://arya.lovejade.cn/#/zh-cn?id=🚝-列出-packagejson-中的脚本命令)     |
+
 ## 如何使用
+
+### 🚀 将当前路径复制到剪贴板
+
+在 MacOS 中，如果你需要在 Terminal 中快速获取当前目录的地址（路径），可以使用以下几种方法：直接在 Terminal 中输入 `pwd`（Print Working Directory）并按回车。这会显示出当前工作目录的完整路径。你可以手动复制这个路径，或者继续下一步将它复制到剪贴板。或创建别名（alias），或使用以下命令将当前目录路径复制到剪贴板：
+
+```bash
+pwd | pbcopy
+```
+
+上述种种操作，并没有达到理想中的方便快捷，因此在 `arya` 注入了如下功能，从而实现打印当前路径并拷贝到剪切板 📋 中：
+
+```bash
+arya copy:pwd
+# 👏 Or Use Alias
+arya pwd
+```
+
+### 🔐 生成随机安全密码
+
+```bash
+arya password
+# 👏 Or Use Alias
+arya pw
+```
+
+#### Options:
+
+- Length (`-l`, `--length`): 指定密码长度 (default: 8)
+- Special (`-s`, `--special`)：是否要使用特殊字符(default true).
+
+Examples:
+
+```bash
+# Generate 16 character password with all character types
+arya password -l 16 -s
+
+# Generate password with only numbers(16) and letters
+arya pw -l 16
+
+# Quick generate with default settings
+arya pw
+```
 
 如下两个代码美化相关功能，可以支持多种文件，譬如: `.js`, `.vue`, `.ux`, `.less`, `.scss`, `.css`, `.json`, `.md`, `.html`, `.qxml`, `.wxml`。
 

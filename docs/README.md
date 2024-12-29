@@ -18,6 +18,48 @@ npm i arya-jarvis -g
 
 ## Usage
 
+### 🚀 Copy the current path to the clipboard.
+
+In macOS, if you need to quickly obtain the path of the current directory in Terminal, you can use several methods: You can directly type pwd (Print Working Directory) in Terminal and press enter. This will display the full path of the current working directory. You can manually copy this path, or proceed to the next step to copy it to the clipboard. Alternatively, you can create an alias or use the following command to copy the current directory path to the clipboard:
+
+```bash
+pwd | pbcopy
+```
+
+However, these operations aren't as convenient and quick as desired. Therefore, in `arya`, the following feature has been implemented to print the current path and copy it to the clipboard 📋:
+
+```bash
+arya copy:pwd
+# 👏 Or Use Alias
+arya pwd
+```
+
+### 🔐 Generate random secure password
+
+```bash
+arya password
+# 👏 Or Use Alias
+arya pw
+```
+
+#### Options:
+
+- Length (`-l`, `--length`): Specify password length (default: 8)
+- Special (`-s`, `--special`): Whether special characters are needed(default true).
+
+Examples:
+
+```bash
+# Generate 16 character password with all character types
+arya password -l 16 -s
+
+# Generate password with only numbers(16) and letters
+arya pw -l 16
+
+# Quick generate with default settings
+arya pw
+```
+
 The following two functions can support multiple format files, such as: `.js`, `.vue`, `.ux`, `.less`, `.scss`, `.css`, `.json`, `.md`, `.html`, `.qxml`, `.wxml`.
 
 ### 💄 Prettier the code under the specified path.
